@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(212, 178, 90);
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+strong{
+    color: blue;
+
+}
