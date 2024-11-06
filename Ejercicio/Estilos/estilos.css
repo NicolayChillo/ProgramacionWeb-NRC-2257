@@ -13,3 +13,12 @@ strong{
     color: blue;
 
 }
+ol{
+    color:rgb(12, 27, 46)
+}
+dt{
+    color:rgba(0, 0, 0, 0.874);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 32px;
+}
