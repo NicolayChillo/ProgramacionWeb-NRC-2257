@@ -4,7 +4,11 @@ body{
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
 }
-p{
+*{
+    margin: 0;
+    padding: 0;
+}
+p > h6{
     color: rgb(0, 0, 0);
     font-family: cursive;
 }
@@ -38,4 +42,32 @@ footer p{
 .container{
     text-align: center;
     max-width: 6000px;
+}
+.claseSpan{
+    color: rgb(160, 28, 28);
+    font-family: cursive;
+}
+em{
+    color: rgb(74, 62, 199);
+}
+.claseVerTrailer{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    border-radius: 10px;
+    border-color: rgb(242, 181, 106);
+    cursor: pointer;
+    background-color: bisque;
+}
+
+div li{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+
+.flexStyle{
+    font-size:x-large;
+    border: 10px green dashed;
+    display: flex;
+    justify-content: space-around;
+    
 }
