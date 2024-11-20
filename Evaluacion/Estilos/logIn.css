@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    
+}
+header{
+    background-color:rgb(17, 83, 21);
+    color: wheat;
+}
+#logIn{
+    width: 10%;
+    margin: auto;
+}
+body{
+    background-color: rgb(39, 137, 124);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+form{
+    background-color: rgb(87, 117, 160);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+#boton {
+    width: 70px;
+    margin: 0 auto;
+}

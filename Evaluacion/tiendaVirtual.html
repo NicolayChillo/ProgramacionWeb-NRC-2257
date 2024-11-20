@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="Estilos/tiedaVirtual.css">
+</head>
+<body>
+    <header>
+        <center><h1>Tienda Virtual</h1></center>
+        <nav class="navegacion">        
+            <center>
+                <a href="#ropa">Ropa</a>    
+                <a href="#tecnologia"> | Tecnologia</a>
+                <a href="#zapatos"> | Zapatos</a> | Contactos
+            </center>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <aside class="categorias">
+            <center>Categorias</center>
+            <form class="botonCategorias">
+                <input type="submit" value="Ropa" id="botonRopa">
+                <input type="submit" value="Tecnologia" id="botonTecnologia">
+                <input type="submit" value="Zapatos" id="botonZapatos">
+            </form>
+            
+        </aside>
+        <section clas="articulos">
+            <h2>Ropa</h2>
+            <article id="ropa">
+                <center><img src="img/pantalon.png" id="pantalon"></center>
+                <p>Pantalon </p>
+                <p>Color: Negro</p>
+                <p> $ 50.000</p>
+                <input type="submit" value="Comprar" id="botonComprar">
+            </article>
+            <h2>Tecnologia</h2>
+            <article id="tecnologia">
+                <center><img src="img/celular1.jpeg" id="celular"></center>
+                <p>Celular 1 </p>
+                <p>Color: Blanco con detalles rosados</p>
+                <p> $ 250.000</p>
+                <input type="submit" value="Comprar" id="botonComprar">
+            </article>
+            <h2>Zapatos</h2>
+            <article id="zapatos">
+                <center><img src="img/zapatos.jpg" id="zapatos"></center>
+                <p>Zapato Casual </p>
+                <p>Color: Cafe</p>
+                <p> $ 65.000</p>
+                <input type="submit" value="Comprar" id="botonComprar">
+            </article>
+            
+        </section>
+        
+        <aside class="chatbot">
+            <center>Chatbot</center>
+            <center><img src="img/bot.png" id="bot"></center>
+            <form class="chat">
+                <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <input type="submit" value="Enviar" id="botonEnviar">
+            </form>
+            
+        </aside>
+        
+      </div>
+      <footer>
+        <h4>Sobre Nosotros</h4>
+        <p>Somos una tienda web dedicada a ofrecer los mejores precios en tegnologia, ropa y zapatos</p>
+        <h4>Siguenos</h4>
+        <div class="redes">
+            <a href="https://www.facebook.com/NicolayChill0" target="_blank">
+                <figure>
+                    <center><img src="Img/faceb.png" id="logoFacebook" class="logoRedes"></center>
+                </figure>
+            </a> 
+            <a href="https://www.instagram.com/nikolay.chillo/" target="_blank">
+                <figure>
+                    <center><img src="Img/insta.png" id="logoInstagram" class="logoRedes"></center>
+                </figure> 
+            </a>          
+        </div>
+        <form action="inventario.html">
+            <input type="submit" value="Ver tabla de inventario" id="botonInventario">
+        </form>
+        <p>Derechos reservados 2024</p>
+    </footer>
+    </div>
+</body>
+</html>

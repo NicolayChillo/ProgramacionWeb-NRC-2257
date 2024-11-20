@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="Estilos/estiloTabla.css">
+     <link rel="stylesheet" href="Estilos/stylegb.css">
+</head>
+<body>
+    <header>Tablas</header>
+    <section>
+        <p>Uso de la etiqueta <em>tabla</em> para el <i>manejo</i> de envio o recibo de informacion</p>
+        <article >
+            <table frame="void" rules="all" class="tableStyle" cellpadding="10" cellspacing="10" border="2px">
+                <caption align="top"><h3>Datos de Usuarios</h3></caption>
+                
+                <thead>
+                    <th  align="center">Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>Carlos</td>
+                        <td>Sanchez</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Jose</td>
+                        <td>Perez</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>pie</td>
+                    <td>pie</td>
+                    <td>pie</td>
+                </tfoot>
+            </table>
+
+        </article>
+    </section>
+    <form action="" >
+        <br>
+        Nombres: <input type="text" id="nombre" placeholder="nombres">
+        <br>
+        Apellido:<input type="text" id="apellido" placeholder="apellido">
+        <br>
+        Contraseña: <input type="password" id="password" placeholder="password">
+        <br>
+        <input type="submit" id="boton" >
+        <select id="cboTipo">
+            <option> Estudiante</option>
+            <option> Docente</option>
+            <option> Administrativo</option>
+        </select>
+        
+    </form>
+</body>
+</html>

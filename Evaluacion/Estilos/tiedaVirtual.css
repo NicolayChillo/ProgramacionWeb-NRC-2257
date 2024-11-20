@@ -1,0 +1,136 @@
+header{
+    background-color:rgb(17, 83, 21);
+    color: wheat;
+}
+nav a{
+    color: wheat;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(39, 137, 124);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+}
+#pantalon{
+    width: 200px;
+    margin: 0 auto;
+}
+article{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(240, 196, 130);
+}
+#botonComprar{
+    background-color: rgb(240, 196, 130);
+}
+.contenedor{
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 5px;
+    justify-content: space-between; 
+    font-size:50px;
+}
+section{
+    width: 90%;
+    font-size: 30px;
+}
+.categorias{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    height: 1900px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.chatbot{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(209, 220, 230);
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 400px;
+    width: 500px;   
+}
+#bot{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+#botonRopa{
+    background-color: rgb(17, 83, 21);
+}
+
+#botonTecnologia{
+    background-color: rgb(17, 83, 21);
+}
+#botonZapatos{
+    background-color: rgb(17, 83, 21);
+    float: right;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top:10px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+
+
+}
+#logoFacebook{
+    width: 50px;
+    height: 50px;
+}
+#logoInstagram{
+    width: 50px;
+    height: 50px;
+}
+#botonInventario{
+    background-color: rgb(17, 83, 21);
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.botonCategorias{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+  
+}
+.botonCategorias input[type="submit"]{
+    background-color: rgb(17, 83, 21);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+ 
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+}
+.chat{
+    width: 300px;
+    background-color: rgb(209, 220, 230);
+    margin: 0 auto;
+}
+.chat input[type="submit"]{
+    background-color: rgb(17, 73, 83);
+    color: white;
+    width: 50px;
+    height: 30px;
+   
+}

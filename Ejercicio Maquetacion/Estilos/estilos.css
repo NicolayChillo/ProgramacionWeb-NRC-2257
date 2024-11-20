@@ -23,7 +23,7 @@ nav{
 }
 .contenedor{
     display: flex;
-    background-color: rgb(242, 132, 96); 
+    background-color: rgb(230, 225, 223); 
     flex-direction: row-reverse;
 
 }
@@ -35,6 +35,7 @@ section{
 aside{
     float: right; 
     width: 200px; 
+    background-color: rgb(214, 138, 112);
 }
 footer{
     display:flex;

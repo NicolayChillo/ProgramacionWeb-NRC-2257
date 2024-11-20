@@ -1,0 +1,27 @@
+header{
+    background-color:rgb(17, 83, 21);
+    color: wheat;
+    font-size: 30px;
+}
+nav a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 30px;
+}
+body{
+    background-color: rgb(39, 137, 124);
+
+}
+table{
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-color: rgb(17, 83, 21);
+    
+}
+th, td {
+    border: 3px solid rgb(17, 83, 21); 
+    padding: 10px;
+    text-align: center; 
+}

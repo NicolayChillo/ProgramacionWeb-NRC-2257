@@ -1,0 +1,27 @@
+body{
+    background: rgb(165,101,208);
+    background: linear-gradient(90deg, rgb(183, 126, 220) 0%, rgb(236, 126, 126) 50%, rgb(241, 188, 114) 100%);
+}
+input[type="text"]{
+    background: transparent;
+    border-bottom: 1px solid #8c0f0f00;
+    color:rgb(243, 226, 239);
+    }
+}
+input[type="submit"]{
+    background: rgb(3, 55, 18);
+    border: 1px solid #0000;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+input{
+    background: transparent;
+    border-bottom: 1px solid #0000;
+    color:rgb(129, 36, 112)
+}
+input[type="text"]::placeholder {
+    color:rgb(155, 27, 27);
+}
+input[id="nombre"] {
+    color:rgb(246, 242, 15);
+}
