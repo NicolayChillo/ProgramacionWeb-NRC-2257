@@ -20,39 +20,75 @@
     <div class="contenedor">
         <aside class="categorias">
             <center>Categorias</center>
-            <form class="botonCategorias">
-                <input type="submit" value="Ropa" id="botonRopa">
-                <input type="submit" value="Tecnologia" id="botonTecnologia">
-                <input type="submit" value="Zapatos" id="botonZapatos">
-            </form>
+                <a href="#ropa"><button class="btnCategoria">Ropa</button > </a>
+                <a href="#tecnologia"><button class="btnCategoria">Tecnologia</button > </a>
+                <a href="#zapatos"><button class="btnCategoria">Zapatos</button></a>
             
         </aside>
-        <section clas="articulos">
-            <h2>Ropa</h2>
-            <article id="ropa">
-                <center><img src="img/pantalon.png" id="pantalon"></center>
-                <p>Pantalon </p>
-                <p>Color: Negro</p>
-                <p> $ 50.000</p>
-                <input type="submit" value="Comprar" id="botonComprar">
-            </article>
-            <h2>Tecnologia</h2>
-            <article id="tecnologia">
-                <center><img src="img/celular1.jpeg" id="celular"></center>
-                <p>Celular 1 </p>
-                <p>Color: Blanco con detalles rosados</p>
-                <p> $ 250.000</p>
-                <input type="submit" value="Comprar" id="botonComprar">
-            </article>
-            <h2>Zapatos</h2>
-            <article id="zapatos">
-                <center><img src="img/zapatos.jpg" id="zapatos"></center>
-                <p>Zapato Casual </p>
-                <p>Color: Cafe</p>
-                <p> $ 65.000</p>
-                <input type="submit" value="Comprar" id="botonComprar">
-            </article>
+        <section class="articulos">
+            <h2 id="ropa">Ropa</h2>
+            <figure class="articulo">
+                <img src="./Img/pantalon.png" alt="ropa1" id="pantalon">
+                <figcaption>
+                    <h3>Pantalon</h3>
+                    <p>Pantalon Casual</p>
+                    <p>$50.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/camisa.jpeg" alt="ropa2" id="camisa">
+                <figcaption>
+                    <h3>Camisa</h3>
+                    <p>Camisa de vestir para hombre</p>
+                    <p>$35.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
             
+            <h2 id="tecnologia">Tecnología</h2>
+            <figure class="articulo">
+                <img src="./Img/celular1.jpeg" alt="celular1" id="celular1">
+                <figcaption>
+                    <h3>Celular 1</h3>
+                    <p>Celular con cámara de gran resolución</p>
+                    <p>$180.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/celular2.jpeg" alt="ropa1" id="celular2">
+                <figcaption>
+                    <h3>Celular 2</h3>
+                    <p>Celular con memoria Ram de 8gb</p>
+                    <p>$200.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <h2 id="zapatos">Zapatos</h2>
+            <figure class="articulo">
+                <img src="./Img/zapatos.jpg" alt="zapato1" id="zapato1">
+                <figcaption>
+                    <h3>Zapato Casual</h3>
+                    <p>100% cuero | Color: cáfe</p>
+                    <p>$85.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/zapatos2.jpg" alt="ropa1">
+                <figcaption>
+                    <h3>Zapato Deportivos</h3>
+                    <p>Plantilla baja | Color: blanco</p>
+                    <p>$50.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+               </figure>
+
         </section>
         
         <aside class="chatbot">
@@ -70,7 +106,7 @@
         <h4>Sobre Nosotros</h4>
         <p>Somos una tienda web dedicada a ofrecer los mejores precios en tegnologia, ropa y zapatos</p>
         <h4>Siguenos</h4>
-        <div class="redes">
+        <seccion class="redes">
             <a href="https://www.facebook.com/NicolayChill0" target="_blank">
                 <figure>
                     <center><img src="Img/faceb.png" id="logoFacebook" class="logoRedes"></center>
@@ -81,7 +117,7 @@
                     <center><img src="Img/insta.png" id="logoInstagram" class="logoRedes"></center>
                 </figure> 
             </a>          
-        </div>
+        </seccion>
         <form action="inventario.html">
             <input type="submit" value="Ver tabla de inventario" id="botonInventario">
         </form>
