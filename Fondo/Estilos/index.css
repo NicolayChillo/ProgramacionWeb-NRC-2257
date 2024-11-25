@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(231, 206, 177);
+}
+header{
+    background-color: blueviolet;
+}
+.section1{
+    height: 450px;
+    background-color: rgb(0,0,0);
+    background-image: url('../Img/img1.jpg');
+    background-repeat:repeat ;
+    background-position: center ;
+}
+.section2{
+    height: 500px;
+    background-image: url('../Img/fond.png');
+}
+.section3{
+    height: 500px;
+    background-image: url('../Img/fondoAzul.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.section4{
+    height: 1000px;
+}

@@ -1,11 +1,9 @@
-
 header{
     background-color:rgb(17, 83, 21);
     color: wheat;
-    position: sticky; /* Esto hace que el header se quede fijo al hacer scroll */
+    position: sticky;
     top: 0; 
-    width: 100%; 
-    z-index: 1000; 
+    width: 100%;  
 }
 nav a{
     color: wheat;
