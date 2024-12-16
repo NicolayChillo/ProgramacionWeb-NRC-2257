@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(176, 250, 149);
+}
+#logoSacha{
+   margin:auto;
+}
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logoRedes{
+    margin:5px;
+    position: absolute;
+}
+#logoFacebook
+{
+    width: 20px;
+    height: 20px;
+}
+#logoInstagram
+{
+    width: 20px;
+    height: 20px;
+}
+#logoCorreo
+{
+    width: 20px;
+    height: 20px;
+}
+body{
+    
+}
+#logoSacha{
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(176, 250, 149);
+}

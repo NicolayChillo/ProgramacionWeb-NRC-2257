@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="Estilos/tiedaVirtual.css">
+</head>
+<body>
+    <header>
+        <center><h1>Tienda Virtual</h1></center>
+        <nav class="navegacion">        
+            <center>
+                <a href="#ropa">Ropa</a>    
+                <a href="#tecnologia"> | Tecnologia</a>
+                <a href="#zapatos"> | Zapatos</a> | Contactos
+            </center>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <aside class="categorias">
+            <center>Categorias</center>
+                <a href="#ropa"><button class="btnCategoria">Ropa</button > </a>
+                <a href="#tecnologia"><button class="btnCategoria">Tecnologia</button > </a>
+                <a href="#zapatos"><button class="btnCategoria">Zapatos</button></a>
+            
+        </aside>
+        <section class="articulos">
+            <h2 id="ropa">Ropa</h2>
+            <figure class="articulo">
+                <img src="./Img/pantalon.png" alt="ropa1" id="pantalon">
+                <figcaption>
+                    <h3>Pantalon</h3>
+                    <p>Pantalon Casual</p>
+                    <p>$50.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/camisa.jpeg" alt="ropa2" id="camisa">
+                <figcaption>
+                    <h3>Camisa</h3>
+                    <p>Camisa de vestir para hombre</p>
+                    <p>$35.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+            
+            <h2 id="tecnologia">Tecnología</h2>
+            <figure class="articulo">
+                <img src="./Img/celular1.jpeg" alt="celular1" id="celular1">
+                <figcaption>
+                    <h3>Celular 1</h3>
+                    <p>Celular con cámara de gran resolución</p>
+                    <p>$180.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/celular2.jpeg" alt="ropa1" id="celular2">
+                <figcaption>
+                    <h3>Celular 2</h3>
+                    <p>Celular con memoria Ram de 8gb</p>
+                    <p>$200.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <h2 id="zapatos">Zapatos</h2>
+            <figure class="articulo">
+                <img src="./Img/zapatos.jpg" alt="zapato1" id="zapato1">
+                <figcaption>
+                    <h3>Zapato Casual</h3>
+                    <p>100% cuero | Color: cáfe</p>
+                    <p>$85.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+            </figure>
+
+            <figure class="articulo">
+                <img src="./Img/zapatos2.jpg" alt="ropa1">
+                <figcaption>
+                    <h3>Zapato Deportivos</h3>
+                    <p>Plantilla baja | Color: blanco</p>
+                    <p>$50.00</p>
+                    <button class="btnComprar">Comprar</button>
+                </figcaption>
+               </figure>
+
+        </section>
+        
+        <aside class="chatbot">
+            <center>Chatbot</center>
+            <center><img src="img/bot.png" id="bot"></center>
+            <form class="chat">
+                <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <input type="submit" value="Enviar" id="botonEnviar">
+            </form>
+            
+        </aside>
+        
+      </div>
+      <footer>
+        <h4>Sobre Nosotros</h4>
+        <p>Somos una tienda web dedicada a ofrecer los mejores precios en tegnologia, ropa y zapatos</p>
+        <h4>Siguenos</h4>
+        <seccion class="redes">
+            <a href="https://www.facebook.com/NicolayChill0" target="_blank">
+                <figure>
+                    <center><img src="Img/faceb.png" id="logoFacebook" class="logoRedes"></center>
+                </figure>
+            </a> 
+            <a href="https://www.instagram.com/nikolay.chillo/" target="_blank">
+                <figure>
+                    <center><img src="Img/insta.png" id="logoInstagram" class="logoRedes"></center>
+                </figure> 
+            </a>          
+        </seccion>
+        <form action="inventario.html">
+            <input type="submit" value="Ver tabla de inventario" id="botonInventario">
+        </form>
+        <p>Derechos reservados 2024</p>
+    </footer>
+    </div>
+</body>
+</html>

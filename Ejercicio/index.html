@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Pagina Web HTML</title>
+    <link rel="stylesheet" href="Estilos/estiloIndex.css">
+    
+</head>
+
+<body>
+    <div class="container"> 
+
+        <header>
+            <center><a href ="https://es.wikipedia.org/wiki/Gladiator" target="_blank"><h1>Gladiador</h1></a></center>
+
+        </header>
+        <nav>
+            Home | <a href="index2.html">Personajes</a > | <a href="tablas.html">Tablas</a> |
+        </nav>
+        Buscar: <input type="text" id="buscar" name="buscar" placeholder="Buscar">
+                <button class="botonBuscar">Buscar</button>
+                
+        <section>
+
+            <form action="" >
+                <br>
+                Nombres: <input type="text" id="nombre" placeholder="nombres">
+                <br>
+                Apellido:<input type="text" id="apellido" placeholder="apellido">
+                <br>
+                Contraseña: <input type="password" id="password" placeholder="password">
+                <br>
+                <input type="submit" id="boton" >
+                <select id="cboTipo">
+                    <option> Estudiante</option>
+                    <option> Docente</option>
+                    <option> Administrativo</option>
+                </select>
+                
+            </form>
+            <h2 class="destacado">Trama</h2>
+            <p>
+                <strong>Máximo</strong>, general romano, desea volver a casa, pero el emperador <strong>Marco Aurelio
+                </strong> quiere que herede el imperio. Esto hace que <strong>Cómodo</strong> ordene matar a su familia. 
+                Máximo escapa de la muerte y <span class="claseSpan">regresa a Roma como gladiador</span> para 
+                <em>vengar la muerte de su familia.</em>
+            </p>
+            <center><a href = "https://www.sensacine.com/peliculas/pelicula-24944/" target="_blank">
+                <figure>
+                    <img  src="img/Gladiador.jpg" alt="">
+                    <figcaption>Gladiador</figcaption>
+                </figure>
+            </a></center>
+            <button class="claseVerTrailer">Ver Trailer</button>
+        </section>
+
+        <section>
+            <h2 class="destacado" id="lugarEmblematico">Lugar Emblemático</h2>
+            <p>
+                El Coliseo tiene una profunda importancia cultural. Representa el poder y la grandeza del <strong>Imperio 
+                Romano</strong>, al mismo tiempo que simboliza los aspectos más oscuros de la sociedad antigua, como los 
+                <h6>de gladiadores y las ejecuciones públicas.</h6> 
+            </p>
+            <dl>
+                <dt id="ubicacion">Ubicacion</dt>
+                    <li>Imperio - Romano</li>
+                    <li>Pais Actual - Italia</li>
+                    <li>Ciudad Actual - Roma</li>
+                <dt>Altitud</dt>
+                <li>37 m.s.m</li>
+            </dl>
+            <center><a href="https://es.wikipedia.org/wiki/Coliseo " target="_blank">
+                <figure>
+                    <img src="img/Coliseo Romano_2020.jpg" alt="">
+                    <figcaption>Coliseo Romano</figcaption>
+                </figure>
+            </a></center>
+            
+        </section>
+
+        <section>
+            <h2 class="destacado" id="premios">Premios Destacados (ORCAR 2001)</h2>
+            <ol
+                <li>Mejor Actor - Russell Crowe</li>
+                <li>Mejor Pelicula</li>
+                <li>Mejor Sonido</li>
+                <li>Mejor Diseño de Vestuario</li>
+            </ol>
+        </section>
+
+        <footer>
+            <p> Diseñado por Nicolay Chillo</p>
+        </footer>
+    
+    </div>
+
+    <div class="flexStyle">
+        <p>
+            Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. 
+
+        </p>
+        <p>
+            Lorem 2 ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        
+    </div>  
+     
+</body>
+</html>
