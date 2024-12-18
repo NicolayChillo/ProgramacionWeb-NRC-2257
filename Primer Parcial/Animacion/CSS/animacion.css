@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+/* Los keyframeworks en css se utilizan para animar propiedades Css.
+   se utilizan para definir animaciones, */
+
+@keyframes cambiarcolores{
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+        transform: scale(1.5);
+    }
+    50% {
+        background-color: green;
+        transform: scale(1.0);
+    }
+    75% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.circulo1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+
+    animation-name: cambiarcolores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    /* utiliza una curva personalizada que simula un rebote */
+    /* animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+    /* animation-timing-function: steps(5, end); */
+    /* animation-timing-function: step-end; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease; */
+        
+    
+}
+
+@keyframes volar{
+    0% {
+    }
+    20% {
+        transform: translate(2000px, 0px);
+    }
+    30% {
+        transform: translate(2000px, 0px) rotate(90deg);
+    }
+    40% {
+        transform: translate(2000px,200px) rotate(90deg);
+    }
+    50% {
+        transform: translate(2000px,2000px) rotate(180deg);
+    }
+    100% {
+    }
+}
+.avion{
+    animation-name: volar, cambiarcolores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.entorno{
+    position: relative;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    
+
+}
+
+.base{
+    position: absolute;
+    bottom: 0;
+    /* left: 105px; /*para compara que fuera la pelota a la mitad*/ 
+    background-color: green;
+    height: 15px;
+    width: 90px;
+    animation-duration: 2s;
+    animation-timing-function: lineal;
+    animation-name: mover;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover{
+        
+    0% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(105px,0);
+    }
+   50%{
+        transform: translate(210px,0);
+    }
+    75% {
+        transform: translate(105px,0);
+   }
+   100%{
+    transform: translate(0,0);
+   }
+
+}
+
+.pelota{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    animation-name: moverpelota;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverpelota{
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(140px, 265px) rotate(180deg); /* Baja en diagonal hasta la mitad */
+    }
+    50% {
+        transform: translate(280px,0) rotate(180deg); /* Sube en diagonal hasta la mitad */
+    }
+
+    75% {
+        transform: translate(140px, 265px) rotate(0deg); /*regresa a la mitad */
+    }
+    
+}
