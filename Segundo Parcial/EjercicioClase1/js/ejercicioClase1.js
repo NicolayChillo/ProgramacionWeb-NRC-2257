@@ -48,8 +48,8 @@ function maxMinCalificaciones(estudiantes){
         const calificaciones = estudiantes[i].calificaciones;
 
         //caclulo maximo y minimo
-        let maximo = calificaciones.reduce((acumulador, num) => Math.max(acumulador, num), calificaciones[0]);
-        let minimo = calificaciones.reduce((acumulador, num) => Math.min(acumulador, num), calificaciones[0]);
+        let maximo = estudiantes[i].calificaciones.reduce((acumulador, num) => num > acumulador ? num : acumulador, estudiantes[i].calificaciones[0]);
+        let minimo = estudiantes[i].calificaciones.reduce((acumulador, num) => num < acumulador ? num : acumulador, estudiantes[i].calificaciones[0]);
 
         estudiantes[i].maximaCalificacion = maximo;
         estudiantes[i].minimaCalificacion = minimo;
@@ -58,12 +58,12 @@ function maxMinCalificaciones(estudiantes){
 
 
 //FUNCION PARA ENCONTRAR EL PEOR Y MEJOR PROMEDIO
-function peroMejorPromedio(estudiantes){
+function peorMejorPromedio(estudiantes){
     for(let i = 0; i < estudiantes.length; i++){
         const promedios = estudiantes[i].promedio;
 
-        let mejorPromedio = promedios.reduce((acumulador, num) => Math.max(acumulador, num), promedios[0]);
-        let peorPromedio = promedios.reduce((acumulador, num) => Math.min(acumulador, num), promedios[0]);
+        let mejorPromedio = estudiantes[i].promedio.reduce((acumulador, num) => num > acumulador ? num : acumulador, estudiantes[i].promedio[0]);
+        let peorPromedio = estudiantes[i].promedio.reduce((acumulador, num) => num < acumulador ? num : acumulador, estudiantes[i].promedio[0]);
     }
     
 }
@@ -86,4 +86,6 @@ calcularPromedioEstudiante(estudiantes);
 
 console.log("CALCULO MAXIMO Y MINIMO");
 maxMinCalificaciones(estudiantes);
+peorMejorPromedio(estudiantes);
+
 console.log(estudiantes);
