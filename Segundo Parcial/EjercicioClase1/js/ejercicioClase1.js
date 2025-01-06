@@ -62,7 +62,7 @@ console.log(estudiantes);
 for(let i = 0; i < estudiantes.length; i++){
     const promedios = estudiantes[i].promedio;
     
-    if(promedios.length > 0){
+    if( promedios.length > 0){
         let promedioMejor = promedios.reduce((acumulador, num) => num > acumulador ? num : acumulador, promedios[0]);
         let promedioPeor = promedios.reduce((acumulador, num) => num < acumulador ? num : acumulador, promedios[0]);
         console.log("El promedio más alto es: " + promedioMejor);
