@@ -128,4 +128,4 @@ const funcionesAnteriores = function(num1, num2, num3){
 
 
 funcionesAnteriores(14,20,17);
-
+funcionesAnteriores(14,20,"a");
