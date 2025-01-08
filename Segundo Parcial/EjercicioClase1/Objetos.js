@@ -5,14 +5,6 @@ class Producto{
         this.precio = precio;
         this.cantidad = cantidad;
     }
-    venderProducto(nombre, cantidad){
-        if (this.cantidad >= cantidad){
-            this.cantidad -= cantidad;
-            console.log(`Venta realizada, ${cantidad} ${nombre} vendidos`);
-        }else{
-            console.log('No hay suficiente stock');
-        }
-    }
 }
 
 //Creamos el inventario inicial
