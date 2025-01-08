@@ -68,6 +68,7 @@ venderProducto('Manzana', 10);
 venderProducto('Naranja', 20); // Venta con stock insuficiente
 venderProducto('Uvas', 5); // Venta con producto que no esxiste
 
+//aplicamos un descuento del 10% a los productos
 aplicarDescuento(10);
 
 // Mostrar el inventario final
