@@ -24,7 +24,7 @@ console.log("La altura de la persona es:" + altura);
 
 //TIPOS DE DATOS
 //tipo de dato string
-var nombre1 = "Reishel";
+var nombre1 = "Nicolay";
 console.log(nombre1);
 
 //tipo de dato numerico
