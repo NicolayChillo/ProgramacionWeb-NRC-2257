@@ -50,6 +50,7 @@ let pares = numerosFilter.filter(num => num % 2 == 0);
 console.log(pares);
 
 //reduce
+//sirve para reducir un arreglo a un solo valor
 let numerosReduce = [1,2,3,4,5,20,6,7,8,9,10];
 let maximo = numerosReduce.reduce((acumulador, num) => num > acumulador ? num : acumulador, numerosReduce[0]);
 console.log(maximo);

@@ -17,10 +17,10 @@ console.log("La altura de la persona es:" + altura);
 //switch marca un bloque de instrucciones que se ejecuta si una condicion se cumple
 //for marca una condicion de instrucciones que se ejecutan varias veces
 //while marca una condicion de instrucciones que se ejecutan varias veces
-//function marca un bloque de instruucciones que se ejecutan cuando se llama
+//function marca un bloque de instrucciones que se ejecutan cuando se llama
 //try se ejecuta cuando no se produce un error
 //catch se ejecuta cuando se produce un error
-//return se ejecura cuando una condicion se cumple, ademas de retornar un valor
+//return se ejecutara cuando una condicion se cumple, ademas de retornar un valor
 
 //TIPOS DE DATOS
 //tipo de dato string
@@ -57,7 +57,7 @@ console.log(typeof var3);
 console.log(var4);
 console.log(typeof var4);
 
-//tipo de dato boolean)true, false)
+//tipo de dato boolean (true, false)
 var bandera = true;
 console.log(bandera);
 console.log(typeof bandera);
@@ -153,28 +153,31 @@ let x = 10;
 let y = 8;
 let z = x % y;
 console.log(z);
-
-// pre incremento
-let d = 12;
-let e = 4;
-e = ++d;
-console.log(d);
-console.log(e);
-
-//post incremento
-let d = 12;
-let e = 4;
-e = d++;
-console.log(d);
-console.log(e);
 */
 
+// pre incremento
+// let d = 12;
+// let e = 4;
+// let j = 1;
+// e = ++j;
+// j = ++d;
+// console.log(d);
+// console.log(e);
+// console.log(j);
+
+// //post incremento
+// let d = 12;
+// let e = 4;
+// e = d++;
+// console.log(d);
+// console.log(e);
+
 //decremento
-let d = 12;
-let e = 4;
-e = d--;
-console.log(d);
-console.log(e);
+// let d = 12;
+// let e = 4;
+// e = d--;
+// console.log(d);
+// console.log(e);
 
 //simbolos
 var m = 10;
@@ -242,7 +245,7 @@ if (persona1 >= 18) {
 
 let i = 10;
 
-let valMin = 12; valorMax = 12;
+let valMin = 8; valorMax = 12;
 
 //OPERADOR AND ==> &&
 if (i >= valMin && i <= valorMax) {
@@ -260,14 +263,16 @@ if (i >= valMin || i <= valorMax) {
 
 //Operadores ternarios
 let resultado = (i >= valMin && i <= valorMax) ? "El valor esta dentro del rango" : "El valor esta fuera del rango";
+console.log(resultado);
 
 //conversion
 let minumero = "7";
-
 console.log(typeof minumero);
 
 let edad1 = parseInt(minumero);
 let edad2 = Number(minumero);
+console.log(edad1);
+console.log(edad2);
 
 if (edad1 >= 18) {
     console.log("Puede votar");
