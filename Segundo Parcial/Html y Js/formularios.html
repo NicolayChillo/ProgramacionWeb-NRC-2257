@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Formularios con DOM en Javascript</title>
+</head>
+<body>
+    <form id="formulario" action="">
+        Nombre: <input type="text" name="nombre" id="nombre" value="Juan">
+        <br>
+        Apellido: <input type="text" name="apellido" id="apellido" value="Perez">
+        <br>
+        Correo: <input type="email" name="correo" id="correo" value="correo@gmail.com">
+        <br>
+    </form>
+    <button onclick="mostrarValores()" type="submit">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores() {
+            let formulario = document.forms("formulario");
+            console.log(formulario);
+
+            let texto = "";
+
+            for (const element of formulario) {
+                texto += element.value +'<br>';
+            }
+
+            //console.log(texto);
+
+            let nombre = formulario['nombre'];
+            let nombre2 = formulario
+        }
+
+        document.getElementById("formulario");
+    </script>
+</body>
+
+</html>

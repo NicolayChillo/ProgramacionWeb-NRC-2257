@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Enventos con DOM Javascript</title>
+</head>
+<body onload="entrar()">
+    <!--h1 id="titulo" >Evento onclick</h1-->
+    <!--Se ejecuta cuando se va a cargar la pagina-->
+    <!--h1 id="titulo">Evento OnLoad</h1>
+    <div id="mostrar"></div-->
+    <br>
+    <!-- Nombre = <input type="text" onchange="convertir(this)"> -->
+    <!--h1 id="titulo" onmouseover="rojo(this)" onmouseout="negro(this)">Evento OnMouseOver</h1-->
+    <!--h1 id="titulo" onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Evento OnMouseDown y OnMouseUp</h1-->
+    
+    <h1 id="titulo">Eventos Onfocus OnBlur</h1>
+    <br>
+    
+
+    <form action="" method="get" id="formulario">
+        Nombre: <input type="text" id="nombre" >
+    <br><br>
+        Apellido: <input type="text" id="apellido" >
+    </form>
+    <script>
+        //EVENTO ONCLICK
+        // //Con evento Onclick en  h1
+        // function cambiarTexto(titulo){
+        //     titulo.innerHTML = "Cambiamos el texto";
+        // }
+
+        // //Llamamos a la funcion con el evento onclick
+        // document.getElementById("titulo").onclick = cambiarTexto;
+        // //Funcion tipo callback
+        // //Se hace mas dinamico
+
+        // function cambiarTexto(){
+        //     document.getElementById("titulo").innerHTML = "Otro titulo";
+        // }
+
+        // //EVENTO ONLOAD
+        // function entrar(){
+        //     alert("Bienvenido a la pagina");
+        // }
+
+        // //Manejo de coockies
+        // //Archivos que guardan informacion cuando navegamos por la web
+        // //Validar un formato denominado llave, valor
+        // let texto = "";
+        // if(navigator.cookieEnabled){
+        //     texto = "Las coockies estan habilitadas";
+        // }
+        // else{
+        //     texto = "Las coockies estan inhabilitadas";
+        // }
+        // document.getElementById("mostrar").innerHTML = texto;
+
+        // // EVENTO ONCHANGE
+        // function convertir(input){
+        //     input.value = input.value.toUpperCase();
+        // }
+
+        // //EVENTO ONMOUSEOVER y ONMOUSEOUT
+        // console.log("Cambio a color rojo");
+        // function rojo(titulo){
+        //     titulo.style.color = "red";
+        // }
+        // console.log("Cambio a color azul");
+
+        // function azul(titulo){
+        //     titulo.style.color = "blue";
+        // }
+        // console.log("Cambio a color verde");
+
+        // function verde(titulo){
+        //     titulo.style.color = "green";
+        // }
+
+        // //EVENTO ONFOCUS y ONBLUR
+        // function cambiar(elementInput){
+        //     elementInput.style.backgroundColor = "yellow";
+        // }
+        // function regresar(elementinput){
+        //     elementInput.style.backgroundColor = "white";
+        // }
+        
+        //Evento con addEventListener
+        // document.getElementById("nombre").addEventListener("click",cambiar)
+        // document.getElementById("nombre").addEventListener("blur",regresar)
+        // function cambiar(evento){
+        //     let componente = evento.target;
+        //     componente.style.backgroundColor = "yellow";
+        // }
+        // function regresar(evento){
+        //     let componente = evento.target;
+        //     componente.style.backgroundColor = "white";
+        // }
+
+        // //Funciones tipo flecha
+        // document.getElementById("nombre").addEventListener("click",(evento) => {
+        
+        //     evento.target.style.backgroundColor = "pink";
+        // });
+
+        // document.getElementById("nombre").addEventListener("blur",(evento) => {
+        //     evento.target.style.backgroundColor = "white";
+        // });
+
+        // document.getElementById("apellido").addEventListener("click",(evento) => {
+        
+        //     evento.target.style.backgroundColor = "pink";
+        // });
+
+        // document.getElementById("apellido").addEventListener("blur",(evento) => {
+        //     evento.target.style.backgroundColor = "white";
+        // });
+
+         //Funciones 
+         let formulario = document.getElementById("formulario");
+
+         formulario.addEventListener("click",(evento) => {
+            evento.target.style.backgroundColor = "green";
+        },true);
+
+        formulario.addEventListener("blur",(evento) => {
+            evento.target.style.backgroundColor = "white";
+        },true);
+
+        formulario.addEventListener("click",(evento) => {
+        
+            evento.target.style.backgroundColor = "green";
+        },true);
+
+        formulario.addEventListener("blur",(evento) => {
+            evento.target.style.backgroundColor = "white";
+        },true);
+
+    </script>
+</body>
+</html>

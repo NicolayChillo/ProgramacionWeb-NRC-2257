@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del Dom en Javascript</title>
+    <stile>
+        img {
+            width: 500px;
+            height: 300px;
+        }
+    </stile>
+</head>
+<body>
+    <h1 id="titulo">Manejo del Dom en Javascript</h1>
+
+    <button type="button" onclick="mostrarImagen()">Mostrar</button>
+    <button typo="button" onclick="pararImagen()">Parar</button>
+    <img id="imagen" src="img/FondaA.jpg" alt="imagen">
+    <script>
+        //document.write("Saludos Write");
+        function mostrar(){
+            //document.write("ADIOS");
+            //document.getElementById("titulo").innerHTML = "Nuevo titulo";
+            //document.getElementById("imagen").src = "img/FondoB.jpg";
+            document.getElementById("titulo").style.color = "red";}
+    
+    
+        //Crear una funcion que permita el cambio de una imagen cada 2 a 3 segundos.
+        //Settimeout
+        //Set interval
+        // 4 a 5 imagenes
+        function mostrarImagen(){
+            let imagenes = ["img/FondoB.jpg", "img/FondoC.jpeg", "img/FondoD.jpeg", "img/FondoE.jpg", "img/FondoF.jpeg"];
+            let i = 0;
+            intervaloId = setInterval(() => {
+                document.getElementById("imagen").src = imagenes[i];
+                i++;
+                if(i == imagenes.length){
+                    i = 0;
+                }
+            }, 2000);
+        }
+        function pararImagen(){
+            clearInterval(intervaloId);
+        }
+    </script>
+</body>
+</html>

@@ -3,16 +3,9 @@ const estudiantes = [
     {nombre: "Juan", calificaciones: [12,17,20,19]},
     {nombre: "Maria", calificaciones: [15,18,19,20]},
     {nombre: "Pedro", calificaciones: [9,11,20,17]},
-    {nombre: "Ana", calificaciones: [4,17,19,15]},
-    {nombre: "Luis", calificaciones: [10,15,20,8]},
-    {nombre: "Laura", calificaciones: [3,12,2,4]},
-    {nombre: "Pablo", calificaciones: [15,18,20,18]},
-    {nombre: "Carmen", calificaciones: [8,13,19,19]},
-    {nombre: "Carlos", calificaciones: [20,15,20,16]},
-    {nombre: "Sofia", calificaciones: [12,15,19,14]}
 ];
 
-const nuevasCalificaciones = [20,12, 16, 19, 13, 5, 16, 19, 18, 20];
+const nuevasCalificaciones = [20,12, 16];
 
 //agregar nuevas calificaciones
 for (let i = 0; i < estudiantes.length; i++) {
@@ -58,14 +51,17 @@ for(let i = 0; i < estudiantes.length; i++){
 
 console.log(estudiantes);
 
-//Claculo e Imprimir promedio más alto y más bajo
-for(let i = 0; i < estudiantes.length; i++){
-    const promedios = estudiantes[i].promedio;
-    
-    if( promedios.length > 0){
-        let promedioMejor = promedios.reduce((acumulador, num) => num > acumulador ? num : acumulador, promedios[0]);
-        let promedioPeor = promedios.reduce((acumulador, num) => num < acumulador ? num : acumulador, promedios[0]);
-        console.log("El promedio más alto es: " + promedioMejor);
-        console.log("El promedio más bajo es: " + promedioPeor);
+let promedioMasAlto = estudiantes[0].promedio;
+let promedioMasBajo = estudiantes[0].promedio;
+
+for (let i = 1; i < estudiantes.length; i++) {
+    if (estudiantes[i].promedio > promedioMasAlto) {
+        promedioMasAlto = estudiantes[i].promedio;
+    }
+    if (estudiantes[i].promedio < promedioMasBajo) {
+        promedioMasBajo = estudiantes[i].promedio;
     }
 }
+
+console.log("El promedio más alto es: " + promedioMasAlto);
+console.log("El promedio más bajo es: " + promedioMasBajo);

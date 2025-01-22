@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        .azul{
+            color: blue
+        }
+        .rojo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="cabecera" class="azul">Ejemplo del DOM con Javascript</h1>
+        <p id="parrafo" class="azul"">Este es un ejemplo de como manipular el DOM con Javascript</p>
+        <p id="parrafo2" class="rojo">Parrafo 2</p>
+    </header>
+    <script>
+        // //console.log("Saludos desde Javascript");
+        // /*GET ELEMENT BY ID*/
+        // let cabecera = document.getElementById("cabecera").innerHTML;
+        // console.log(`Valor cabecera: ` + cabecera);//otra forma para conseguir el valor template string
+        // let parrafo = document.getElementById("parrafo");
+        // console.log(parrafo.innerHTML);
+    
+        // //Cambiar su valor a traves de html
+        // parrafo.innerHTML = "Nuevo valor del parrafo";
+        // console.log(parrafo.innerHTML);
+
+        // //GET ELEMENT BY TAG NAME
+        // let parrafos = document.getElementsByTagName("p");
+        // console.log(`Numero de parrafos: ` + parrafos.length);
+
+        // for (const elements of parrafos) {
+        //     console.log(elements.innerHTML);
+        // }
+
+        // //GET ELEMENT BY CLASS NAME
+        // let elementos = document.getElementsByClassName("azul");
+        // console.log(`Numero de parrafos: ` + elementos.length);
+
+        // for (const elements of elementos) {
+        //     console.log(elements.innerHTML);
+        // }
+
+        //Querry Selector All
+        // let elementos = document.querySelectorAll("h1.azul");
+        // console.log(`Numero de elementos: ` + elementos.length);
+
+        // for (const elements of elementos) {
+        //     console.log(elements.innerHTML);
+        // }
+
+        // let elementos = document.querySelectorAll("p.rojo");
+        // console.log(`Numero de elementos: ` + elementos.length);
+
+        // for (const elements of elementos) {
+        //     console.log(elements.innerHTML);
+        // }
+
+        
+    </script>
+</body>
+</html>

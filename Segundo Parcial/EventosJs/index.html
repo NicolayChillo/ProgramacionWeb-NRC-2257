@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 5 - EVENTOS EN JAVASCRIPT</title>
+</head>
+<body>
+    <h1 id="titulo">PANEL</h1>
+    <button id="mostrar_Panel">Mostrar</button>
+
+    <div id="panel">
+        <form action="">
+            <label for="titulo_input">Cambiar Título:</label>
+            <input type="texto" id="titulo_input"><br><br>
+
+            <label for="color_input">Cambiar Color de Fondo:</label>
+            <input type="color" id="color_input"><br><br>
+
+            <label for="checkbox_input">
+                <input type="checkbox" id="checkbox_input">
+                Habilitar Área de Comentarios
+            </label><br><br>
+
+            <textarea id="commentario" disabled></textarea>
+        </form>
+
+    </div>
+
+    <h2>Lista de Elementos</h2>
+    <ul id="elementos">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+
+    </ul>
+
+    <script>
+        let panelBoton = document.getElementById("mostrar_Panel");
+        let configurarPanel = document.getElementById("panel");
+        panelBoton.addEventListener('click', () => {
+            configurarPanel.style.display = configurarPanel.style.display === 'none' ? 'block' : 'none';
+        });
+
+        let tituloInput = document.getElementById("titulo_input");
+        let titulo = document.getElementById("titulo");
+        tituloInput.addEventListener('input', () => {
+            titulo.innerHTML = tituloInput.value;
+        });
+
+        let colorInput = document.getElementById("color_input");
+        colorInput.addEventListener('input', () => {
+            document.body.style.backgroundColor = event.target.value;
+        });
+
+        let checkboxInput = document.getElementById("checkbox_input");
+        let commentario = document.getElementById("commentario");
+        checkboxInput.addEventListener('change', () => {
+            commentario.disabled = !checkboxInput.checked;
+        });
+
+        let elementos = document.getElementById("elementos");
+        elementos.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                event.target.remove();
+            }
+        });
+    </script>
+</body>
+</html>
